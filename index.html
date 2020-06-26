@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <h2>Calculator</h2>
+        </div>
+        <div>
+            <input id="result" class="result" type="text" onFocus="this.style.backgroundColor='rgb(170, 170, 170)';"
+                onBlur="this.style.backgroundColor='white';">
+        </div>
+
+        <div>
+            <button class="btn" onclick="clearNum()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">C</button>
+            <button class="btn" onclick="backSpace()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">&#8592;</button>
+            <button class="btn" onclick="getNum('(')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">(</button>
+            <button class="btn" onclick="getNum(')')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">)</button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNum('7')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">7</button>
+            <button class="btn" onclick="getNum('8')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">8</button>
+            <button class="btn" onclick="getNum('9')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">9</button>
+            <button class="btn" onclick="getNum('*')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">X</button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNum('4')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">4</button>
+            <button class="btn" onclick="getNum('5')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">5</button>
+            <button class="btn" onclick="getNum('6')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">6</button>
+            <button class="btn" onclick="getNum('-')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('1')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">1</button>
+            <button class="btn" onclick="getNum('2')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">2</button>
+            <button class="btn" onclick="getNum('3')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">3</button>
+            <button class="btn" onclick="getNum('+')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">+</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('0')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">0</button>
+            <button class="btn" onclick="getNum('.')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">.</button>
+            <button class="btn" onclick="getResult()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">=</button>
+            <button class="btn" onclick="getNum('/')" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">&#247;</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getSin()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">sin</button>
+            <button class="btn" onclick="getCos()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">cos</button>
+            <button class="btn" onclick="getTan()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">tan</button>
+            <button class="btn" onclick="sqr()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">x<sup>2</sup></button>
+        </div>
+        <div>
+            <button class="btn" onclick="getInverseSin()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">asin</button>
+            <button class="btn" onclick="getInverseCos()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">acos</button>
+            <button class="btn" onclick="getInverseTan()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">atan</button>
+            <button class="btn" onclick="squareRoot()" onmouseover="this.style.backgroundColor='rgb(170, 170, 170)'"
+                onmouseout="this.style.backgroundColor='white'">&#8730;</button>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
